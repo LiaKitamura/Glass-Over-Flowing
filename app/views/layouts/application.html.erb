@@ -20,14 +20,9 @@
       <% end %>
     </ul>
   </nav>
-  <div class='container'>
-    <p class='notice'><%= notice %></p>
-    <p class='alert'><%= alert %></p>
-  </div>
+  <%= notice_message_here %>
   <section class='container'>
      <%= yield %>
   </section>
-
-
 </body>
 </html>
