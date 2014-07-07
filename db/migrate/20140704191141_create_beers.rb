@@ -6,7 +6,6 @@ class CreateBeers < ActiveRecord::Migration
       t.string :name
       t.string :brewed_by
       t.float :ABV
-
       t.timestamps
     end
   end

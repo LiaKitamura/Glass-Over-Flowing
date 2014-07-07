@@ -13,7 +13,6 @@ gem 'spring',        group: :development
 gem 'devise'
 gem 'bootstrap-sass'
 
-
 group :test do
   # a collection of special matchers
   gem 'shoulda-matchers'

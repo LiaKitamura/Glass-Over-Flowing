@@ -1,5 +1,4 @@
 class Admin::BeersController < AdminController
-  before_action :authenticate_user!
   before_action :find_beer, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -16,10 +15,8 @@ class Admin::BeersController < AdminController
   def create
     @beer = Beer.new(beer_params)
     if @beer.save
-      flash[:notice] = 'New beer saved'
-      redirect_to admin_beers_path
+      redirect_to admin_beers_path, notice: 'Beer added'
     else
-      flash[:alert] = 'There was an error saving new beer'
       render :new
     end
   end
@@ -37,17 +34,16 @@ class Admin::BeersController < AdminController
 
   def destroy
     @beer.destroy
-    flash[:notice] = 'Delete successful'
     redirect_to admin_beers_path
   end
 
   private
 
-  def beer_params
-    params.require(:beer).permit(:category, :style, :name, :brewed_by, :ABV)
-  end
-
   def find_beer
     @beer = Beer.find(params[:id])
+  end
+
+  def beer_params
+    params.require(:beer).permit(:category, :style, :name, :brewed_by, :ABV)
   end
 end

@@ -1,5 +1,6 @@
 class Beer < ActiveRecord::Base
   has_many :favorites, as: :favorable
 
-  validates :style, :name, presence: true
+  validates :category, :style, :name, :brewed_by, presence: true
+  
 end
