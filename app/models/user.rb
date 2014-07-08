@@ -6,4 +6,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :validatable, :confirmable
 
   enum role: [:user, :admin]
+
+  validates :name, :role, presence: :true
 end
