@@ -14,5 +14,5 @@ RSpec.describe Beer, :type => :model do
     it { validate_presence_of :ABV }
   end
 
-
+ # buttholes
 end
