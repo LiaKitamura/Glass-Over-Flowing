@@ -16,7 +16,7 @@ class BeersController < ApplicationController
     if @beer.save
       redirect_to beers_path, notice: 'Beer added'
     else
-      render :new
+      render :new, alert: 'Something went wrong. Beer was not created.'
     end
   end
 
