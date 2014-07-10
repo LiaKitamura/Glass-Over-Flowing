@@ -15,6 +15,7 @@ gem 'bootstrap-sass'
 gem 'brewery_db'
 gem 'better_errors'
 gem 'binding_of_caller'
+gem 'figaro'
 
 group :test do
   # a collection of special matchers
