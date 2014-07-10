@@ -1,11 +1,10 @@
-class UsersController < ApplicationController
+class UserController < ApplicationController
   before_filter :authenticate_user!
 
   def show
-    if params[:id]
-      @user = User.find(params[:id])
-    else
-      @user = current_user
+    @user = User.find(params[:id])
+    unless @user == current_user
+      redirect_to root_path
     end
   end
 
