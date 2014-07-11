@@ -1,21 +1,21 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  # resources :beers do
-  #   resources :favorites, only: [:new, :create, :edit, :update]
-  # end
+  # Non-Authenticated Users
+  root to: 'site#index'
+
+  resources :user, only: [:show, :update, :destroy]
 
   namespace :admin do
     root to: 'base#index', as: :admin_root
     resources :beers
   end
 
-  # Non-Authenticated Users
-  root to: 'site#index'
-
-  resources :user, only: [:show, :update, :destroy]
-
-  resources :beers, only: [:index, :show]
+  resources :beers, only: [:index, :show] do
+    collection do
+      get '/categories', to: 'beers#index'
+    end
+  end
 
   resources :online_brews, path: 'b', only: [:index] do
     collection do

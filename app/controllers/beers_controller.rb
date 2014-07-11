@@ -1,6 +1,7 @@
 class BeersController < ApplicationController
+
   def index
-    @beers = Beer.all
+    @beers = BreweryAPI.categories.all
   end
 
   def show

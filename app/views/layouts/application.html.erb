@@ -9,8 +9,10 @@
 <body>
 <nav class='navbar navbar-default'>
   <ul class='nav navbar-nav'>
-    <%= render 'layouts/navbar' %>
+    <!-- <%= render 'layouts/navbar' %> -->
     <% if user_signed_in? %>
+      <li><%= link_to('Home', user_path(current_user), class:'navbar-brand') %></li>
+      <li><%= link_to('Beer', beers_path, class:'nav navbar-nav') %></li>
       <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
     <% else %>
       <li><%= link_to('Sign Up', new_user_registration_path) %></li>
