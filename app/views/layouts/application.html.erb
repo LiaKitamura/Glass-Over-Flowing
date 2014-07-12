@@ -2,22 +2,33 @@
 <html>
 <head>
   <title>Glass Over Flowing</title>
+  <link rel="stylesheet" href="/application.css.scss" media="screen" title="no title" charset="utf-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class='navbar navbar-default'>
-  <ul class='nav navbar-nav'>
-    <%= render 'layouts/navbar' %>
-    <% if user_signed_in? %>
-      <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
-    <% else %>
-      <li><%= link_to('Sign Up', new_user_registration_path) %></li>
-      <li><%= link_to('Sign In', new_user_session_path) %></li>
-    <% end %>
-  </ul>
-</nav>
+  <div class="bg-main">
+    <header>
+      <div class="container">
+        <div class="navbar navbar_">
+          <h1 class="brand">Glass Over Flowing</h1>
+          <nav class='navbar navbar-default'>
+            <ul class='nav navbar-nav'>
+              <%= render 'layouts/navbar' %>
+              <% if user_signed_in? %>
+                <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+              <% else %>
+                <li><%= link_to('Sign Up', new_user_registration_path) %></li>
+                <li><%= link_to('Sign In', new_user_session_path) %></li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
+<!--
 
 <div class="container">
   <p class="notice"><%= notice %></p>
@@ -26,7 +37,7 @@
 
 <section class='container'>
   <%= yield %>
-</section>
+</section> -->
 
 </body>
 </html>
