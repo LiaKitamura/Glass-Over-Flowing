@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UserController < ApplicationController
   before_filter :authenticate_user!
 
   def show
@@ -18,8 +18,8 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    user = User.find(params[:id])
-    user.destroy
+    @user = User.find(params[:id])
+    @user.destroy
     redirect_to users_path, notice: 'User deleted.'
   end
 
