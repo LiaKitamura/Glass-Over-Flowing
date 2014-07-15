@@ -24,7 +24,7 @@ class BeerImporter
         beer_styles = brewskies.all(styleId: style.id)
         beer_styles.each do |beer|
           puts "Importing Beer: #{beer.name}"
-          s.beers.find_or_create_by(category: category.name, style: style.name, name: beer.name, brewed_by: brewery.name, resources_style_id: style.id, ABV: beer.abv, beer_description: beer.description)
+          s.beers.find_or_create_by(name: beer.name, ABV: beer.abv, beer_description: beer.description)
         end
       end
     end
