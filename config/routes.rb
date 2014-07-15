@@ -16,21 +16,4 @@ Rails.application.routes.draw do
   resources :categories, only: [:index, :show]
   resources :styles, only: [:index, :show]
   resources :beers, only: [:index, :show]
-
-  # resources :categories, only: [:index, :show] do
-  #   get '/styles/:id', to: 'styles#index'
-  # end
-
-  # resources :online_brews, path: 'b', only: [:index] do
-  #   collection do
-  #     get '/beer/:id', to: 'online_brews#show_beer', as: :show_beer
-  #   end
-  # end
-
-  # resources :beers, only: [:index, :show] do
-  #   collection do
-  #     get '/categories', to: 'beers#index'
-  #   end
-  # end
-
 end

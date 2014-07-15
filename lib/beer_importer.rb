@@ -14,7 +14,7 @@ class BeerImporter
     # Save each beer/category/etc into your database
     cats.each do |category|
       puts "Importing Category: #{category.name}"
-      c = Category.find_or_create_by(name: category.name, category_description: category.description)
+      c = Category.find_or_create_by(name: category.name)
 
       cat_styles = styles.select { |s| s.categoryId == category.id }
       cat_styles.each do |style|

@@ -8,31 +8,6 @@ class BeersController < ApplicationController
     @brew = Beer.find(params[:id])
   end
 
-  def new
-    @brew = Beer.new
-  end
-
-  def create
-    @brew = Beer.new(brew_params)
-    if @brew.save
-      redirect_to brews_path, notice: 'Beer added'
-    else
-      render :new
-    end
-  end
-
-  def edit
-
-  end
-
-  def update
-
-  end
-
-  def destroy
-
-  end
-
   private
 
   def brew_params
