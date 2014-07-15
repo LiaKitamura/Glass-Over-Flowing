@@ -1,0 +1,7 @@
+<% @categories.each do |category| %>
+  <h2><%= category.name %></h2>
+  <p><%= category.category_description %></p>
+  <% category.styles.each do |style| %>
+    <p><%= link_to(style.style_name, style) %></p>
+  <% end %>
+<% end %>
