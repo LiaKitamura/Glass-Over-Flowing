@@ -4,7 +4,6 @@
   <title>Glass Over Flowing</title>
   <link rel="stylesheet" href="/application.css.scss" media="screen" title="no title" charset="utf-8">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -38,6 +37,6 @@
 <section class='container'>
   <%= yield %>
 </section> -->
-
+<%= javascript_include_tag 'application' %>
 </body>
 </html>
