@@ -8,11 +8,13 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'base#index', as: :admin_root
+    resources :categories
+    resources :styles
     resources :beers
   end
 
   resources :categories, only: [:index, :show]
-  resources :styles, only: [:show]
+  resources :styles, only: [:index, :show]
   resources :beers, only: [:index, :show]
 
   # resources :categories, only: [:index, :show] do

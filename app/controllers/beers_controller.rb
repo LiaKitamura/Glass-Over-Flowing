@@ -1,21 +1,21 @@
 class BeersController < ApplicationController
 
   def index
-    @beers = Beer.all
+    @brews = Beer.all
   end
 
   def show
-    @beer = Beer.find(params[:id])
+    @brew = Beer.find(params[:id])
   end
 
   def new
-    @beer = Beer.new
+    @brew = Beer.new
   end
 
   def create
-    @beer = Beer.new(beer_params)
-    if @beer.save
-      redirect_to beers_path, notice: 'Beer added'
+    @brew = Beer.new(brew_params)
+    if @brew.save
+      redirect_to brews_path, notice: 'Beer added'
     else
       render :new
     end
@@ -35,7 +35,7 @@ class BeersController < ApplicationController
 
   private
 
-  def beer_params
+  def brew_params
     params.require(:beer).permit(:category, :style, :name, :brewed_by, :ABV)
   end
 end

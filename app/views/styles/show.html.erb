@@ -1,1 +1,5 @@
-<h1><%= @styles.style_name %></h1>
+<h1><%= @style.style_name %></h1>
+<p><%= @style.style_description %></p>
+<% @style.beers.each do |beer| %>
+  <p><%= link_to(beer.name, beer) %><br \></p>
+<% end %>
