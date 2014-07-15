@@ -1,11 +1,5 @@
-<h3><%= @beer.category %></h3>
-<h3><%= @beer.style %></h3>
-<p>Name: <%= @beer.name %></p>
-<p>Brewed By: <%= @beer.brewed_by %></p>
-<p>ABV: <%= @beer.ABV %>%</p>
-
-<form action="">
-  <input type="checkbox" name="favorite" value="Yes">Favorite this Beer?<br>
-</form>
-
-<%= link_to 'Back', beers_path %>
+<h2><%= @brew.name %></h2>
+<h4><%= @brew.style.category_name %></h4>
+<h4><%= @brew.style.style_name %></h4>
+<p>ABV: <%= @brew.ABV %>%</p>
+<p>Beer Description: <%= @brew.beer_description %></p>

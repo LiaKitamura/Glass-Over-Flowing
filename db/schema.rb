@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140707141147) do
+ActiveRecord::Schema.define(version: 20140715031715) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(version: 20140707141147) do
     t.float    "ABV"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "style_id"
+    t.text     "beer_description"
+  end
+
+  create_table "categories", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "resources_category_id"
+    t.text     "category_description"
   end
 
   create_table "favorites", force: true do |t|
@@ -35,6 +45,18 @@ ActiveRecord::Schema.define(version: 20140707141147) do
   end
 
   add_index "favorites", ["favorable_id", "favorable_type"], name: "index_favorites_on_favorable_id_and_favorable_type", using: :btree
+
+  create_table "styles", force: true do |t|
+    t.string   "style_name"
+    t.string   "category_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "category_id"
+    t.integer  "resources_id"
+    t.text     "style_description"
+  end
+
+  add_index "styles", ["category_id"], name: "index_styles_on_category_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
