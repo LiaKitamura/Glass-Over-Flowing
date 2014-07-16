@@ -2,8 +2,7 @@
 <html>
 <head>
   <title>Glass Over Flowing</title>
-  <link rel="stylesheet" href="/application.css.scss" media="screen" title="no title" charset="utf-8">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,7 +10,7 @@
     <header>
       <div class="container">
         <div class="navbar navbar_">
-          <h1 class="brand">Glass Over Flowing</h1>
+
           <nav class='navbar navbar-default'>
             <ul class='nav navbar-nav'>
               <%= render 'layouts/navbar' %>
@@ -27,16 +26,14 @@
       </div>
     </header>
   </div>
-<!--
-
 <div class="container">
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 </div>
 
-<section class='container'>
+<section>
   <%= yield %>
-</section> -->
+</section>
 <%= javascript_include_tag 'application' %>
 </body>
 </html>
