@@ -5,6 +5,6 @@ class StylesController < ApplicationController
   end
 
   def show
-    @style = Style.find(params[:id])
+    @style = Style.friendly.find(params[:id])
   end
 end

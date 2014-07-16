@@ -5,7 +5,7 @@ class BeersController < ApplicationController
   end
 
   def show
-    @brew = Beer.find(params[:id])
+    @brew = Beer.friendly.find(params[:id])
   end
 
   private
