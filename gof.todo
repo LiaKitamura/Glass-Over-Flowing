@@ -55,9 +55,9 @@ User Model:
 
   ☐ last_name
 
-  ☐ email
+  ✔ email @done(2014-07-16 02:11)
 
-  ☐ password
+  ✔ password @done(2014-07-16 02:11)
 
 Favorites Model:
 

@@ -8,5 +8,9 @@ class User < ActiveRecord::Base
   enum role: [:user, :admin]
 
   validates :name, :role, presence: :true
-  
+
+  def show_favorites(beer)
+    User.favorites.first.favorable
+  end
+
 end
