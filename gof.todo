@@ -11,17 +11,19 @@ MVP:
 
   ✔ Login/Logout. User Authentication @done(2014-07-15 03:12)
 
-  ☐ save favorite beers and save try list
+  ✔ save favorite beers  @done(2014-07-16 07:54)
+
+  ☐ save try list
 
   ☐ Advance search for beers
 
   ☐ integrate social networking stuff
 
-  ☐ users can favorite beers
+  ✔ users can favorite beers @done(2014-07-16 08:02)
 
 Beer Model:
 
-  ☐ beer has_many :favorites
+  ✔ beer has_many :favorites @done(2014-07-16 08:02)
 
   ✔ Category @done(2014-07-15 03:08)
       each cat. has a short Description?
@@ -47,7 +49,7 @@ Beer Model:
 
 User Model:
 
-  ☐ user has_many :favorites
+  ✔ user has_many :favorites @done(2014-07-16 08:03)
 
   ☐ user has a photo
 
@@ -61,9 +63,9 @@ User Model:
 
 Favorites Model:
 
-  ☐ favorites belongs_to :user
+  ✔ favorites belongs_to :user @done(2014-07-16 07:53)
 
-  ☐ favorites also belongs_to beer
+  ✔ favorites also belongs_to beer @done(2014-07-16 07:53)
 
 Features:
 
@@ -110,9 +112,9 @@ TODO:
 
   ☐ make sure we are running the right tests
 
-  ☐ Brewery DB API
+  ✔ Brewery DB API @done(2014-07-16 07:53)
 
-  ☐ create views content
+  ✔ create views content @done(2014-07-16 07:53)
 
 
 other idea section:
@@ -178,7 +180,7 @@ requirements:
 
       ☐ include more than 5 models
 
-      ☐ use polymorphism
+      ✔ use polymorphism @done(2014-07-16 08:05)
 
       ☐ use ajax
 
