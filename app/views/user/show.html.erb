@@ -16,7 +16,7 @@
       </div>
       <div class="modal-body">
         <% @user.favorited_beers.each do |beer| %>
-         <p><%= link_to(beer.name, beer) %> | <%= link_to 'Remove Favorite', favorite_path(beer.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+         <p><%= link_to(beer.name, beer) %> | <%= link_to '', favorite_path(beer.id), class:"fa fa-bomb", method: :delete, data: { confirm: 'Are you sure?' } %></p>
         <% end %>
       </div>
       <div class="modal-footer">

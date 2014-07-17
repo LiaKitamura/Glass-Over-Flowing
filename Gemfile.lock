@@ -75,6 +75,8 @@ GEM
     figaro (0.7.0)
       bundler (~> 1.0)
       rails (>= 3, < 5)
+    font-awesome-sass (4.1.0)
+      sass (~> 3.2)
     friendly_id (5.0.4)
       activerecord (>= 4.0.0)
     hashie (2.1.2)
@@ -207,6 +209,7 @@ DEPENDENCIES
   factory_girl_rails
   ffaker
   figaro
+  font-awesome-sass
   friendly_id
   jbuilder (~> 2.0)
   jquery-rails
