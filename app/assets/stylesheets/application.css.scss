@@ -33,6 +33,25 @@ h1 {
 
 }
 
+
+// ******* flash notice and alert styling ******* //
+.flash-alert{
+  padding: 10px;
+  border: 1px solid #750202;
+  color: #750202;
+  font-size: 18px;
+  background-color: #fcadad;
+  font-weight: bold;
+}
+.flash-notice {
+  padding: 10px;
+  border: 1px solid #017505;
+  color: #017505;
+  font-size: 18px;
+  background-color: #b5ffb2;
+  font-weight: bold;
+}
+
 //
 
 //styling for footer.
