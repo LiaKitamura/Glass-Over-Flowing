@@ -2,16 +2,13 @@
 @import 'video-js';
 @import 'styles';
 @import 'beer';
-//font size for h1 tag, and styling for video.
 
 h1 {
   font-size: 175px, Helvetica;
   text-align: center;
-  color: white;
 }
 
-
-////background-video
+//**background-video**//
 
 #video-background {
   position: absolute !important;
@@ -26,7 +23,7 @@ h1 {
   background-size: cover;
 }
 
-////////////////////////////
+//*********navbar**********//
 #item1 {
   font-size: 20px;
   font-family: Helvetica;
@@ -34,6 +31,7 @@ h1 {
 
 }
 
+//
 
 //styling for footer.
 // .footer-1 {
