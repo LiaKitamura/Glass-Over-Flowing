@@ -1,7 +1,13 @@
-<% @categories.each do |category| %>
-  <h2><%= category.name %></h2>
-  <p><%= category.category_description %></p>
-  <% category.styles.each do |style| %>
-    <p><%= link_to(style.style_name, style) %></p>
+<div class="row beer-page">
+  <% @categories.each do |category| %>
+    <div class="col-sm-6">
+      <h2><%= category.name %></h2>
+      <p><%= category.category_description %></p>
+      <ul>
+        <% category.styles.each do |style| %>
+          <li><%= link_to(style.style_name, style) %></li>
+        <% end %>
+      </ul>
+    </div>
   <% end %>
-<% end %>
+</div>
