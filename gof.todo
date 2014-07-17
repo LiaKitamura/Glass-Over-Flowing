@@ -21,15 +21,16 @@ MVP:
 
   ✔ users can favorite beers @done(2014-07-16 08:02)
 
+  ☐ if beer is already favorited show a different message.
+      right now if its already favorited it won't duplicate but still shows beer favorited message
+
 Beer Model:
 
   ✔ beer has_many :favorites @done(2014-07-16 08:02)
 
   ✔ Category @done(2014-07-15 03:08)
-      each cat. has a short Description?
 
   ✔ Style @done(2014-07-15 03:08)
-      style Description
 
   ✔ Name @done(2014-07-15 03:09)
 
@@ -127,7 +128,7 @@ other idea section:
 
   ☐ photo/label recognition
 
-  ☐ angular
+  ✘ angular @cancelled(2014-07-17 02:31)
 
   ☐ ajax
 
