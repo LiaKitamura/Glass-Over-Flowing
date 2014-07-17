@@ -33,6 +33,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
+  gem 'xray-rails'
 end
 
 gem 'sdoc', '~> 0.4.0',          group: :doc

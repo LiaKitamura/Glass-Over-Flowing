@@ -1,1 +1,45 @@
-@import 'bootstrap'
+@import 'bootstrap';
+@import 'video-js';
+@import 'styles';
+@import 'beer';
+//font size for h1 tag, and styling for video.
+
+h1 {
+  font-size: 175px, Helvetica;
+  text-align: center;
+  color: white;
+}
+
+
+////background-video
+
+#video-background {
+  position: absolute !important;
+  top: 0 !important;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background-size: cover;
+}
+
+////////////////////////////
+#item1 {
+  font-size: 20px;
+  font-family: Helvetica;
+  color: white;
+
+}
+
+
+//styling for footer.
+// .footer-1 {
+//   padding-top: 50px;
+//   padding-bottom: 50  px;
+//   font-size: 15px;
+//   background-color: #7f8c8d;
+//   color: #95a5a6;
+// }
