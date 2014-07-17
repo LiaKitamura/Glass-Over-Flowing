@@ -19,11 +19,11 @@ MVP:
 
   ☐ integrate social networking stuff
 
-  ☐ users can favorite beers
+  ✔ users can favorite beers @done(2014-07-16 08:02)
 
 Beer Model:
 
-  ☐ beer has_many :favorites
+  ✔ beer has_many :favorites @done(2014-07-16 08:02)
 
   ✔ Category @done(2014-07-15 03:08)
       each cat. has a short Description?
@@ -49,7 +49,7 @@ Beer Model:
 
 User Model:
 
-  ☐ user has_many :favorites
+  ✔ user has_many :favorites @done(2014-07-16 08:03)
 
   ☐ user has a photo
 
@@ -180,7 +180,7 @@ requirements:
 
       ☐ include more than 5 models
 
-      ☐ use polymorphism
+      ✔ use polymorphism @done(2014-07-16 08:05)
 
       ☐ use ajax
 

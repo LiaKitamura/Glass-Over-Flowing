@@ -5,7 +5,7 @@
 <p>Beer Description: <%= @brew.beer_description %></p>
 
 <% unless current_user.favorites.exists?(id: @brew.id) %>
-  <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), method: :post %>
+  <span class="glyphicon glyphicon-star-empty"></span><%= link_to 'Add to favorites', favorites_path(beer_id: @brew), method: :post %>
 <% else %>
   <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
 <% end %>
