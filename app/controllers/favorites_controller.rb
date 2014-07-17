@@ -1,54 +1,27 @@
 class FavoritesController < ApplicationController
   before_action :authenticate_user!
-
-  def new
-    @context = context
-    @favorite = @context.favorites.new
-  end
+  before_action :set_beer
 
   def create
-    @context = context
-    @favorite = @context.favorites.new(favorite_params)
-
-    if @favorite.save
-      redirect_to context_url(context), notice: "The favorite has been successfully created."
-    end
-  end
-
-  def edit
-    @context = context
-    @favorite = context.favorites.find(params[:id])
-  end
-
-  def update
-    @context = context
-    @favorite = @context.favorites.find(params[:id])
-    if @favorite.update_attributes(favorite_params)
-      redirect_to context_url(context), notice: "The favorite has been updated"
-    end
-  end
-
-private
-
-  def favorite_params
-    params.require(:favorite).permit!
-  end
-
-  def context
-    if params[:user_id]
-      id = params[:user_id]
-      User.find(params[:user_id])
+    if Favorite.find_or_create_by(favorable: @brew, user: current_user)
+      redirect_to @brew, notice: 'Beer has been favorited'
     else
-      id = params[:beer_id]
-      Beer.find(params[:beer_id])
+      redirect_to @brew, alert: 'Something went wrong...*sad panda*'
     end
   end
 
-  def context_url(context)
-    if User === context
-      user_path(context)
-    else
-      beer_path(context)
-    end
+  def destroy
+    Favorite.where(favorable_id: @brew.id, user_id: current_user.id).first.destroy
+    redirect_to user_path(current_user.id), notice: 'Beer is no longer in favorites'
+  end
+
+  private
+
+  # def favorite_params
+  #   params.require(:favorite).permit!
+  # end
+
+  def set_beer
+    @brew = Beer.friendly.find(params[:beer_id] || params[:id])
   end
 end

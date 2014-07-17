@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   end
 
   resources :categories, only: [:index, :show]
-  resources :styles, only: [:index, :show] 
+  resources :styles, only: [:index, :show]
   resources :beers, only: [:index, :show]
+  resources :favorites, only: [:create, :destroy]
 end

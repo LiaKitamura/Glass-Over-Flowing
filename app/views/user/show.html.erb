@@ -1,2 +1,12 @@
 <h3><%= @user.name if @user.name %></h3>
 <p>Email: <%= @user.email if @user.email %></p>
+
+<h4><%= @user.name %>'s favorites</h4>
+
+<% @user.favorited_beers.each do |beer| %>
+ <p><%= link_to(beer.name, beer) %> | <%= link_to 'Remove Favorite', favorite_path(beer.id), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+<% end %>
+
+
+<!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->
+  <!-- but still shows the message that the beer has been favorited -->

@@ -3,3 +3,12 @@
 <h4><%= @brew.style.style_name %></h4>
 <p>ABV: <%= @brew.ABV %>%</p>
 <p>Beer Description: <%= @brew.beer_description %></p>
+
+<% unless current_user.favorites.exists?(id: @brew.id) %>
+  <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), method: :post %>
+<% else %>
+  <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
+<% end %>
+
+<!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->
+<!-- but still shows the message beer favorited message -->
