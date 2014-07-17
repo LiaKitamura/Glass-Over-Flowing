@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.1.1'
 
-gem 'better_errors'
-gem 'binding_of_caller'
 gem 'brewery_db'
 gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.0.0'
@@ -28,6 +26,8 @@ group :test do
 end
 
 group :development, :test do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'pry-rails'
