@@ -1,0 +1,187 @@
+GlassOverFlowing:
+
+Description:
+Changing the world one beer at a time.
+this app is to enlighten customers about beers and different styles available.
+customers can sign up and save a list of favorites and beers to try in the future.
+
+MVP:
+
+  ☐ showcase beer
+
+  ✔ Login/Logout. User Authentication @done(2014-07-15 03:12)
+
+  ☐ save favorite beers and save try list
+
+  ☐ Advance search for beers
+
+  ☐ integrate social networking stuff
+
+  ☐ users can favorite beers
+
+Beer Model:
+
+  ☐ beer has_many :favorites
+
+  ✔ Category @done(2014-07-15 03:08)
+      each cat. has a short Description?
+
+  ✔ Style @done(2014-07-15 03:08)
+      style Description
+
+  ✔ Name @done(2014-07-15 03:09)
+
+  ✔ ABV @done(2014-07-15 03:09)
+
+  ☐ Brewed_by
+
+  ✔ Description @done(2014-07-15 03:09)
+
+    Beer index:
+
+      ✔ categories @done(2014-07-15 03:09)
+
+        ✔ list of each style in each category @done(2014-07-15 03:09)
+
+    Beer show:
+
+User Model:
+
+  ☐ user has_many :favorites
+
+  ☐ user has a photo
+
+  ☐ first_name
+
+  ☐ last_name
+
+  ✔ email @done(2014-07-16 02:11)
+
+  ✔ password @done(2014-07-16 02:11)
+
+Favorites Model:
+
+  ☐ favorites belongs_to :user
+
+  ☐ favorites also belongs_to beer
+
+Features:
+
+Beer showcase:
+
+  ✔ show page for beer @done(2014-07-15 03:09)
+
+Search by:
+
+  ☐ category
+
+  ☐ styles
+
+  ☐ beer name
+
+  ☐ brewery name
+
+
+Story Board:
+
+- User goes to homepage
+- you can make a search, login or signup
+- search by beer styles or name
+- show list of search results
+- click result to get more info
+- save to favorites
+
+
+TODO:
+
+  ☐ rspec
+
+    ☐ test models
+
+    ☐ test controllers
+
+  ✔ devise @done(2014-07-15 03:10)
+
+    ✔ authorization @done(2014-07-15 03:10)
+
+    ✔ Authentication @done(2014-07-15 03:10)
+
+  ✔ combine the two in working order @done(2014-07-15 03:10)
+
+  ☐ make sure we are running the right tests
+
+  ☐ Brewery DB API
+
+  ☐ create views content
+
+
+other idea section:
+
+  ☐ gameification
+
+  ☐ points
+
+  ☐ badges
+
+  ☐ photo/label recognition
+
+  ☐ angular
+
+  ☐ ajax
+
+
+
+stuff to checkout:
+
+  ☐ gioco. points and badges
+
+
+later on stuff:
+
+
+
+
+
+
+
+requirements:
+
+  ✔ Must be web related @done(2014-07-15 03:10)
+
+  ✔ Must persist data in a database @done(2014-07-15 03:10)
+
+  ✔ Must incorporate Ruby Logic @done(2014-07-15 03:10)
+
+  ☐ Must incorporate JavaScript Logic
+
+  ✔ Must be a dynamic web application with user interaction @done(2014-07-15 03:10)
+
+  ☐ Must be Fully Styled
+
+  ☐ Must be mobile friendly
+
+  ☐ Must have minimum 80% test coverage
+
+  ☐ Must adhere to the Sandi Metz law (will teach later)
+
+  ☐ Must be fully deployed live to the internet
+
+  ☐ Must have custom domain
+
+  ☐ Must have a plan for potential revenue generation
+
+  ☐ Must have accomanying 5min slide presentation
+
+  * Bonus :
+
+      ☐ include 1 unique technical feature not covered in class
+
+      ☐ include more than 5 models
+
+      ☐ use polymorphism
+
+      ☐ use ajax
+
+      ☐ use client side MVC with angular or ember
+
+      ☐ integrate interesting technology like LaunchKey

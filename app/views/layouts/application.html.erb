@@ -2,25 +2,33 @@
 <html>
 <head>
   <title>Glass Over Flowing</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<nav class='navbar navbar-default'>
-  <ul class='nav navbar-nav'>
-    <%= render 'layouts/navbar' %>
-  </ul>
-</nav>
-
+  <div class="bg-main">
+    <header>
+      <div class="container">
+        <div class="navbar navbar_">
+          <nav class='navbar'>
+            <ul class='nav navbar-nav' id="item1">
+              <%= render 'layouts/navbar' %>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+  </div>
 <div class="container">
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
+
+  <section>
+    <%= yield %>
+  </section>
+
+  <%= render 'layouts/footer' %>
 </div>
-
-<section class='container'>
-  <%= yield %>
-</section>
-
+<%= javascript_include_tag 'application' %>
 </body>
 </html>

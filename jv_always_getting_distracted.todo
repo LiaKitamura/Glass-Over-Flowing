@@ -1,0 +1,40 @@
+GlassOverFlowing:
+
+Description:
+Changing the world one beer at a time.
+this app is to enlighten customers about beers and different styles available.
+customers can sign up and save a list of favorite beers and beers they want to try.
+
+Things that need to stop looking so damn ugly:
+
+  ☐ navbar
+
+  ☐ signin/signup page
+
+  ☐ site index page
+      (aka homepage for users who are NOT signed in or who are not signed up)
+
+  ☐ user show page
+      (user/show.html.erb)
+      (aka homepage for users who have already signed up or have signed in)
+
+  ☐ category/style page
+      (categories/index.html.erb)
+      (this shows all categories with corresponding styles underneath each category heading)
+
+  ☐ styles/beer page
+      (styles/show.html.erb)
+      (shows A style with the style Description. under this style lists all beers that correspond to this style)
+
+  ☐ beers show page
+      (i hope by now you are getting the pattern that is going on)
+      (so if you guessed what this page does, good job.)
+      (if not. this page shows all the information about a beer.)
+
+
+Admin section coming soon!:
+  Sooooo get er done :
+
+  ☐ when the above is at near completion. you will have the pleasure of getting down and dirty with the admin section
+
+You're doing good. Don't be so hard on yourself and just keep on smashing down that enter button.

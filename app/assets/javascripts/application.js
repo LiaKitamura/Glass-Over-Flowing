@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require bootstrap
+//= require video
+//= require_self
+
+
+videojs.options.flash.swf = "<%= asset_path('video-js.swf') %>";
