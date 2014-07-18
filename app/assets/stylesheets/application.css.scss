@@ -5,6 +5,41 @@
 @import 'beer';
 @import 'users';
 
+header {
+  height: 62px;
+}
+
+div#header {
+  box-shadow: rgba(0,0,0,0.05) 0 1px 2px inset;
+  background-color: #f0f2f6;
+  background-color: linear-gradient(rgba(255,255,255,0),
+                                    #f0f2f6 95%,#e5e8ee);
+  background-image: linear-gradient(rgba(255, 255, 255, 0),
+                                    rgb(240, 242, 246) 95%,
+                                    rgb(229, 232, 238));
+  background-color: #f0f2f6;
+}
+
+
+div#header::after {
+  background: linear-gradient(#98a4b8,
+              rgba(171,182,201,0.48),
+              rgba(139,154,179,0.02));
+  background-image: linear-gradient(rgb(152, 164, 184),
+                                    rgba(171, 182, 201, 0.478431),
+                                    rgba(139, 154, 179, 0.0196078));
+  content: "";
+  height: 5px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  z-index: 50;
+}
+
+div.navbar {
+  margin-bottom: 0;
+}
+
 h1 {
   font-size: 175px, Helvetica;
   text-align: center;
@@ -29,8 +64,6 @@ h1 {
 #item1 {
   font-size: 20px;
   font-family: Helvetica;
-  color: white;
-
 }
 
 
