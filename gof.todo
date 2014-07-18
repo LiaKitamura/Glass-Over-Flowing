@@ -48,6 +48,8 @@ Beer Model:
 
     Beer show:
 
+    ☐ on beer styles column. have a star or some symbol if user has favorited a beer on the list
+
 User Model:
 
   ✔ user has_many :favorites @done(2014-07-16 08:03)
