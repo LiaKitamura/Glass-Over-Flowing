@@ -5,6 +5,14 @@
 @import 'beer';
 @import 'users';
 
+
+//*********navbar**********//
+
+#item1 {
+  font-size: 20px;
+  font-family: Helvetica;
+}
+
 header {
   height: 62px;
 }
@@ -19,7 +27,6 @@ div#header {
                                     rgb(229, 232, 238));
   background-color: #f0f2f6;
 }
-
 
 div#header::after {
   background: linear-gradient(#98a4b8,
@@ -60,14 +67,8 @@ h1 {
   background-size: cover;
 }
 
-//*********navbar**********//
-#item1 {
-  font-size: 20px;
-  font-family: Helvetica;
-}
-
-
 // ******* flash notice and alert styling ******* //
+
 .flash-alert{
   padding: 10px;
   border: 1px solid #750202;
@@ -76,6 +77,7 @@ h1 {
   background-color: #fcadad;
   font-weight: bold;
 }
+
 .flash-notice {
   padding: 10px;
   border: 1px solid #017505;
@@ -84,8 +86,6 @@ h1 {
   background-color: #b5ffb2;
   font-weight: bold;
 }
-
-//
 
 //styling for footer.
 // .footer-1 {
