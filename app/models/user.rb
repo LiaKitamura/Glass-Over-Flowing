@@ -12,6 +12,4 @@ class User < ActiveRecord::Base
   def favorited_beers
     favorites.collect { |f| f.favorable }
   end
-
-
 end
