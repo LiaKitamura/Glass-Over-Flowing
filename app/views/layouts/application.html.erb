@@ -7,27 +7,24 @@
   <%= favicon_link_tag 'favicon.ico' %>
 </head>
 <body>
-    <header>
-      <div class="container">
-        <div class="navbar navbar_">
-          <nav class='navbar'>
-            <ul class='nav navbar-nav' id="item1">
-              <%= render 'layouts/navbar' %>
-            </ul>
-          </nav>
-        </div>
+  <header>
+    <div class="container">
+      <div class="navbar navbar">
+        <nav class='navbar'>
+          <ul class='nav navbar-nav' id="item1">
+            <%= render 'layouts/navbar' %>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
+  <%= show_notice_message %>
+  <div class="container">
+    <section>
+      <%= yield %>
+    </section>
+    <%= render 'layouts/footer' %>
   </div>
-<%= show_notice_message %>
-
-<div class="container">
-  <section>
-    <%= yield %>
-  </section>
-
-  <%= render 'layouts/footer' %>
-</div>
-<%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
 </body>
 </html>
