@@ -1,0 +1,5 @@
+<h1 class="page-header">Search Results for <%= params[:q] %></h1>
+<% @results.each do |result| %>
+  <h1><%= link_to(result.style_name, result) %></h1>
+  <p><%= result.style_description %></p>
+<% end %>
