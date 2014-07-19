@@ -1,3 +1,19 @@
 // Place all the styles related to the categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+div#accordion.panel-group {
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.panel-title a {
+  font-size: 130%;
+}
+
+.panel-collapse ul{
+  list-style: none;
+  text-align: left;
+}
