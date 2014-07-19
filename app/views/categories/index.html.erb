@@ -1,13 +1,22 @@
-<div class="row beer-page">
-  <% @categories.each do |category| %>
-    <div class="col-sm-6">
-      <h2><%= category.name %></h2>
-      <p><%= category.category_description %></p>
-      <ul>
-        <% category.styles.each do |style| %>
-          <li><%= link_to(style.style_name, style) %></li>
-        <% end %>
-      </ul>
+<div class="panel-group" id="accordion">
+  <% @categories.each_with_index do |i, index| %>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse<%= index+1 %>">
+            <%= i.name %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse<%= index+1 %>" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="row">
+            <% i.styles.each do |style| %>
+              <li class="col-sm-6"><%= link_to(style.style_name, style) %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
     </div>
   <% end %>
 </div>
