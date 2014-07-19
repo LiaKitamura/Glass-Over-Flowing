@@ -3,7 +3,9 @@
 
     <%= text_field_tag(:q, '', placeholder: 'Search...', class: 'form-control') %>
     <span class="input-group-btn">
-      <%= submit_tag("search", class: 'fa fa-search btn btn-primary') %>
+      <%= button_tag("", class: 'btn btn-primary') do %>
+        <i class='fa fa-search'></i>
+      <% end %>
     </span>
   </div>
 <% end %>
