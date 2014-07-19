@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '4.1.1'
 
@@ -36,6 +37,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
   gem 'xray-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
