@@ -22,11 +22,11 @@ class BeerImporter
       cat_styles = styles.select { |s| s.categoryId == category.id }
       cat_styles.each do |style|
         puts "Importing Style: #{style.name}"
-        s = c.styles.find_or_create_by!(resources_id: style.id) do |style|
-          style.category_name = c.name
-          style.style_name = style.name
-          style.style_description = style.description
-          style.resources_id = style.id
+        s = c.styles.find_or_create_by!(resources_id: style.id) do |style_type|
+          style_type.category_name = c.name
+          style_type.style_name = style.name
+          style_type.style_description = style.description
+          style_type.resources_id = style.id
         end
 
         beer_styles = brewskies.all(styleId: style.id, withBreweries: 'Y', withLabels: 'Y')
