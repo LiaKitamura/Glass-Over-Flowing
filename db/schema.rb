@@ -31,6 +31,16 @@ ActiveRecord::Schema.define(version: 20140719195141) do
 
   add_index "beers", ["slug"], name: "index_beers_on_slug", unique: true, using: :btree
 
+  create_table "breweries", force: true do |t|
+    t.string   "brewery_name"
+    t.text     "brewery_description"
+    t.string   "website"
+    t.string   "icon"
+    t.string   "large_image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "categories", force: true do |t|
     t.string   "name"
     t.datetime "created_at"

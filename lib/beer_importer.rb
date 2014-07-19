@@ -19,12 +19,13 @@ class BeerImporter
       cat_styles = styles.select { |s| s.categoryId == category.id }
       cat_styles.each do |style|
         puts "Importing Style: #{style.name}"
-        s = c.styles.find_or_create_by(category_name: c.name, style_name: style.name, resources_id: style.id, style_description: style.description, category_id: style.categoryId)
+        s = c.styles.find_or_create_by(category_name: c.name, style_name: style.name, resources_id: style.id, style_description: style.description)
 
-        beer_styles = brewskies.all(styleId: style.id)
+        beer_styles = brewskies.all(styleId: style.id, withBreweries: 'Y')
         beer_styles.each do |beer|
           puts "Importing Beer: #{beer.name}"
-          s.beers.find_or_create_by(name: beer.name, ABV: beer.abv, beer_description: beer.description)
+          b = s.beers.find_or_create_by(name: beer.name, ABV: beer.abv, beer_description: beer.description)
+          b.breweries.find_or_create_by(brwery_name: beer.breweries.name, brewery_description: beer.breweries.description, website: beer.breweries.website, icon: beer.breweries.images.icon, large_image: beer.breweries.images.icon.large )
         end
       end
     end
