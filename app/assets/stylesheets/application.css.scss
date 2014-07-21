@@ -17,17 +17,18 @@
 
 // navbar has some weird color thing going on **//
 
-header {
+header,
+#header nav {
   height: 62px;
 }
 
-#header.container-fluid {
+#header .container-fluid {
   padding: 0;
 }
 
-nav {
-  height: 100%;
-}
+// nav {
+//   height: 100%;
+// }
 
 div#header {
   box-shadow: rgba(0,0,0,0.05) 0 1px 2px inset;
@@ -66,8 +67,8 @@ h1 {
 
 // ***** navbar2 ????? ***** // // ** why is this id a bootstrap example id ** //
 
-#bs-example-navbar-collapse-1 {
-  background-color: white;
+#nav-collapse {
+
 }
 
 
