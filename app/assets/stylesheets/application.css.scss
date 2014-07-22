@@ -6,7 +6,7 @@
 @import 'styles';
 @import 'beer';
 @import 'users';
-
+@import 'grayscale';
 
 //*********navbar**********//
 
@@ -25,10 +25,6 @@ header,
 #header .container-fluid {
   padding: 0;
 }
-
-// nav {
-//   height: 100%;
-// }
 
 div#header {
   box-shadow: rgba(0,0,0,0.05) 0 1px 2px inset;
@@ -65,13 +61,6 @@ h1 {
   text-align: center;
 }
 
-// ***** navbar2 ????? ***** // // ** why is this id a bootstrap example id ** //
-
-#nav-collapse {
-
-}
-
-
 //**background-video**//
 
 #video-background {
@@ -106,12 +95,3 @@ h1 {
   background-color: #b5ffb2;
   font-weight: bold;
 }
-
-//styling for footer.
-// .footer-1 {
-//   padding-top: 50px;
-//   padding-bottom: 50  px;
-//   font-size: 15px;
-//   background-color: #7f8c8d;
-//   color: #95a5a6;
-// }
