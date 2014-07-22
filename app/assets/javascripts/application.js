@@ -11,8 +11,10 @@
 // about supported directives.
 //
 //= require jquery
+//= require easing
 //= require jquery_ujs
 //= require bootstrap
+//= require grayscale
 //= require video
 //= require_self
 
