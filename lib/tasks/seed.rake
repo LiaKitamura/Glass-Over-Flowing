@@ -9,3 +9,15 @@ namespace :seed do
   end
 
 end
+
+# should i break up beer importer up into different files like categories, styles, beer???
+  # would i then include them in beer importer. or what is the best approach to getting information
+  # one model at a time?
+
+# first just get all category names
+
+# then get all style names
+
+# then get maybe like 50 or so??? beers max for each style
+
+# then get the brewery info for just the beers in db
