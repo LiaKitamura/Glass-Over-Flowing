@@ -150,7 +150,9 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
-
+.intro-body div.container {
+  margin-top: 10%;
+}
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
