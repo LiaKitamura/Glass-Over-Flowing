@@ -12,6 +12,10 @@
   background: white;
   border-right: 1px solid #dadfe5;
   min-width: 200px;
+  max-width: 20%;
+  max-height: 500px;
+  overflow: auto;
+  margin-top: 3%;
 
   ul.catergory-list{
     padding: 0;
@@ -23,6 +27,7 @@
     li.section a {
       border: 1px solid transparent;
       border-left: 0;
+      display: block;
       font-size: 12px;
       font-weight: bold;
       height: 22px;
@@ -31,6 +36,7 @@
       color: #008cdd;
       text-decoration: none;
       cursor: pointer;
+      overflow: hidden;
 
       &:hover{
         border-top-color: #3b89e9;

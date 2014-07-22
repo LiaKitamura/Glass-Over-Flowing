@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.1.2'
 
 gem 'rails', '4.1.1'
 
@@ -7,10 +8,12 @@ gem 'bootstrap-sass'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'devise'
 gem 'figaro'
+gem 'font-awesome-sass'
 gem 'friendly_id'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-rails'
 gem 'pg'
+gem 'pg_search'
 gem 'sass-rails', '~> 4.0.3'
 gem 'thin'
 gem 'turbolinks'
@@ -34,6 +37,10 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
   gem 'xray-rails'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 gem 'sdoc', '~> 0.4.0',          group: :doc

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Non-Authenticated Users
   root to: 'site#index'
-
+  
   resources :user, only: [:show, :update, :destroy]
 
   namespace :admin do
@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   resources :styles, only: [:index, :show]
   resources :beers, only: [:index, :show]
   resources :favorites, only: [:create, :destroy]
+
+  get '/search' => 'search_results#index'
 end

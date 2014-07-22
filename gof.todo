@@ -21,15 +21,17 @@ MVP:
 
   ✔ users can favorite beers @done(2014-07-16 08:02)
 
+
 Beer Model:
+
+  ☐ if beer is already favorited show a different message.
+      right now if its already favorited it won't duplicate but still shows beer favorited message
 
   ✔ beer has_many :favorites @done(2014-07-16 08:02)
 
   ✔ Category @done(2014-07-15 03:08)
-      each cat. has a short Description?
 
   ✔ Style @done(2014-07-15 03:08)
-      style Description
 
   ✔ Name @done(2014-07-15 03:09)
 
@@ -46,6 +48,13 @@ Beer Model:
         ✔ list of each style in each category @done(2014-07-15 03:09)
 
     Beer show:
+
+    ☐ in the side bar when all beers are listed. have a star or some symbol if user has favorited a beer on the list
+
+    category show:
+
+      ☐ collapse plugin on bootstrap using accordion
+          this will have category has header title and styles will be split into 2 col in the same row
 
 User Model:
 
@@ -127,7 +136,7 @@ other idea section:
 
   ☐ photo/label recognition
 
-  ☐ angular
+  ✘ angular @cancelled(2014-07-17 02:31)
 
   ☐ ajax
 

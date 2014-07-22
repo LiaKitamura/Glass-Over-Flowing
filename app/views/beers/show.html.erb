@@ -5,11 +5,17 @@
   <p>ABV: <%= @brew.ABV %>%</p>
   <p>Beer Description: <%= @brew.beer_description %></p>
 </div>
-
-<% unless current_user.favorites.exists?(id: @brew.id) %>
-  <span class="glyphicon glyphicon-star-empty"></span><%= link_to 'Add to favorites', favorites_path(beer_id: @brew), method: :post %>
-<% else %>
-  <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
+<% if current_user %>
+  <% unless current_user.favorites.exists?(id: @brew.id) %>
+    <button type="button" class="btn btn-default btn-lg">
+      <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), class: 'fa fa-beer', method: :post %>
+    </button>
+    <button type="button" class="btn btn-default btn-lg">
+      <%= link_to 'Back to Beers', beers_path, class: 'fa fa-beer' %>
+    </button>
+  <% else %>
+    <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
+  <% end %>
 <% end %>
 
 <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->

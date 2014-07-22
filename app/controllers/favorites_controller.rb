@@ -12,7 +12,7 @@ class FavoritesController < ApplicationController
 
   def destroy
     Favorite.where(favorable_id: @brew.id, user_id: current_user.id).first.destroy
-    redirect_to user_path(current_user.id), notice: 'Beer is no longer in favorites'
+    redirect_to user_path(current_user.id), alert: 'Beer is no longer in favorites'
   end
 
   private

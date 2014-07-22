@@ -1,0 +1,21 @@
+GlassOverFlowing:
+
+Description:
+Changing the world one beer at a time.
+this app is to enlighten customers about beers and different styles available.
+customers can sign up and save a list of favorites and beers to try in the future.
+
+Things I need to finish :
+
+  ☐ have navbar on specific pages
+      right now it shows on every page including the homepage
+
+  ☐ clean up the side bar for the style listing all beers
+
+    ☐ add a star for beers already favorited by user in the list
+
+  ☐ need to figure out the actual beer show page.
+
+  ☐ user show page?
+
+  ☐ change message for already favorited beers.

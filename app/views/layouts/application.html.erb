@@ -1,34 +1,24 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Glass Over Flowing</title>
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag '/favicon.ico' %>
 </head>
 <body>
-  <div class="bg-main">
-    <header>
-      <div class="container">
-        <div class="navbar navbar_">
-          <nav class='navbar'>
-            <ul class='nav navbar-nav' id="item1">
-              <%= render 'layouts/navbar' %>
-            </ul>
-          </nav>
-        </div>
-      </div>
+  <div id="header">
+     <header>
+       <%= render 'layouts/navbar2' %>
     </header>
   </div>
-<div class="container">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-  <section>
-    <%= yield %>
-  </section>
-
-  <%= render 'layouts/footer' %>
-</div>
-<%= javascript_include_tag 'application' %>
+  <%= show_notice_message %>
+  <div class="container-fluid">
+    <section>
+      <%= yield %>
+    </section>
+    <%= render 'layouts/footer' %>
+  </div>
+  <%= javascript_include_tag 'application' %>
 </body>
-</html>
+</html> -->
