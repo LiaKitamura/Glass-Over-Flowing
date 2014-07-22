@@ -61,13 +61,12 @@
                       <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
+                      <a class="page-scroll" href="#beers">Beers</a>
+                    </li>
+                    <li>
                       <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                      <%= link_to('Sign In', new_user_session_path) %>
-                    </li>
-                    <li>
-                      <%= link_to('Sign Up', new_user_registration_path) %>
                     </li>
                 </ul>
             </div>
@@ -150,6 +149,8 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
+            <p><%= link_to('Sign Up', new_user_registration_path) %></p><br />
+            <p><%= link_to('Sign In', new_user_session_path) %></p><br />
             <p>Copyright &copy; Glass Over Flowing</p>
         </div>
     </footer>
