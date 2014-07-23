@@ -12,16 +12,15 @@
 </div>
 <% if current_user %>
   <% unless current_user.favorites.exists?(id: @brew.id) %>
-    <button type="button" class="btn btn-default btn-lg">
+    <button type="button" class="btn btn-default btn-sm">
       <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), class: 'fa fa-beer', method: :post %>
-    </button>
-    <button type="button" class="btn btn-default btn-lg">
-      <%= link_to 'Back to Beers', beers_path, class: 'fa fa-beer' %>
     </button>
   <% else %>
     <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
   <% end %>
 <% end %>
-
+  <button type="button" class="btn btn-default btn-sm">
+    <%= link_to 'Back to Beers', style_path(@brew.style.id), class: 'fa fa-beer' %>
+  </button>
 <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->
 <!-- but still shows the message beer favorited message -->
