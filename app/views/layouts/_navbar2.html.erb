@@ -1,18 +1,21 @@
-<nav class="navbar navbar-default">
-  <div class="collapse navbar-collapse" id="nav-collapse">
-      <ul class="nav navbar-nav">
-        <% if user_signed_in? %>
-          <li><%= link_to('Me', user_path(current_user)) %></li>
-          <li><%= link_to('Beer', categories_path ) %></li>
-          <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
-        <% else %>
-          <li><%= link_to('Sign In', new_user_session_path) %></li>
-          <li><%= link_to('Sign Up', new_user_registration_path) %></li>
-        <% end %>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <%= render 'layouts/pgsearch' %>
-      </ul>
+<nav class="navbar navbar-custom navbar-fixed-top">
+  <div class="container">
+    <div class="collapse navbar-collapse navbar-right" id="nav-collapse">
+        <ul class="nav navbar-nav">
+          <% if user_signed_in? %>
+            <li><%= link_to('Home', root_path) %></li>
+            <li><%= link_to('Beer', categories_path ) %></li>
+            <li><%= link_to('Me', user_path(current_user)) %></li>
+            <li><%= link_to('Logout', destroy_user_session_path, method: :delete) %></li>
+          <% else %>
+            <li><%= link_to('Sign In', new_user_session_path) %></li>
+            <li><%= link_to('Sign Up', new_user_registration_path) %></li>
+          <% end %>
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
+          <%#= render 'layouts/pgsearch' %>
+        </ul>  -->
+      </div>
     </div>
   </div>
 </nav>

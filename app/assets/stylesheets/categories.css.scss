@@ -2,12 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 #accordion.panel-group {
   text-align: center;
   max-width: 80%;
   margin: auto;
-  margin-top: 6%;
 }
 
 .panel-title a {
@@ -15,6 +13,19 @@
 }
 
 .panel-collapse ul{
-  list-style: none;
   text-align: left;
+}
+
+body {
+  // display: table;
+  // width: 100%;
+  // height: auto;
+  // padding: 100px 0;
+  // text-align: center;
+  // color: #fff;
+  background: white url(bubbly.jpg) no-repeat bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
