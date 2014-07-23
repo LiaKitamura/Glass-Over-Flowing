@@ -1,52 +1,50 @@
-<div id="header">
- <header>
-   <%= render 'layouts/navbar2' %>
-</header>
-
-<div class='user-show'>
-  <div class="row">
-    <img src="http://placebear.com/g/150/150" class="img-responsive img-circle" alt="" id="profile_pic">
-  </div>
-  <div class="row">
-    <h1><%= @user.name if @user.name %></h1>
-  </div>
-  <div class="row text-center">
-    <p>Email: <%= @user.email if @user.email %></p>
-  </div>
+<%= render 'layouts/navbar2' %>
+<div class="intro-body">
+  <div class="container">
+    <div class="row">
+      <img src="http://placebear.com/g/150/150" class="img-responsive img-circle" alt="" id="profile_pic">
+    </div>
+    <div class="row text-center">
+      <h1><%= @user.name if @user.name %></h1>
+    </div>
+    <div class="row text-center">
+      <p>Email: <%= @user.email if @user.email %></p>
+    </div>
 
 
-  <!-- Button trigger modal -->
-  <div class="row">
-    <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
-      Favorite Beers
-    </button>
-  </div>
+    <!-- Button trigger modal -->
+    <div class="row">
+      <button class="btn btn-primary btn-md" data-toggle="modal" data-target="#myModal">
+        Favorite Beers
+      </button>
+    </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel"><%= @user.name %>'s favorite</h4>
-        </div>
-        <div class="modal-body">
-          <% @user.favorited_beers.each do |beer| %>
-           <p><%= link_to(beer.name, beer) %> | <%= link_to '', favorite_path(beer.id), class:"fa fa-bomb", method: :delete, data: { confirm: 'Are you sure?' } %></p>
-          <% end %>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel"><%= @user.name %>'s favorite</h4>
+          </div>
+          <div class="modal-body">
+            <% @user.favorited_beers.each do |beer| %>
+             <p><%= link_to(beer.name, beer) %> | <%= link_to '', favorite_path(beer.id), class:"fa fa-bomb", method: :delete, data: { confirm: 'Are you sure?' } %></p>
+            <% end %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer buuut -->
-    <!-- still shows the message that the beer has been favorited -->
-  <div class="row">
-    <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#mymodalEditAccount">
-    <%= link_to('Edit My Account', edit_user_registration_path) %>
-    </button>
+    <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer buuut -->
+      <!-- still shows the message that the beer has been favorited -->
+    <div class="row">
+      <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#mymodalEditAccount">
+      <%= link_to('Edit My Account', edit_user_registration_path) %>
+      </button>
+    </div>
   </div>
 </div>

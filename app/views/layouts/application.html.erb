@@ -23,10 +23,10 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  
+
   <body>
-    <%= yield %>
     <%= show_notice_message %>
+    <%= yield %>
     <%= render 'layouts/footer' %>
     <%= javascript_include_tag 'application' %>
   </body>

@@ -5,7 +5,7 @@
 @import 'categories';
 @import 'styles';
 @import 'beer';
-// @import 'users';
+@import 'users';
 @import 'grayscale';
 
 //*********navbar**********//
@@ -62,19 +62,19 @@
 // }
 
 //**background-video**//
-
-#video-background {
-  position: absolute !important;
-  top: 0 !important;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background-size: cover;
-}
+// 
+// #video-background {
+//   position: absolute !important;
+//   top: 0 !important;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+//   background-size: cover;
+// }
 
 // ******* flash notice and alert styling ******* //
 
