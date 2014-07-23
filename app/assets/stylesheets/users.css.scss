@@ -11,11 +11,11 @@
 // }
 .user {
   margin-top: 12%;
+  color: black;
 }
 
 #user-page p {
   margin: 0;
-  color: black;
 }
 
 #profile_pic {
@@ -31,6 +31,14 @@
 }
 .summary p {
   margin: 8% 0;
+}
+.user-main {
+  background-color: #DDD;
+  border-radius: 2%;
+}
+
+#myModalLabel {
+  color: black;
 }
 
 // when window is less then about 880px the style name and description disappear and move to the bottom //
