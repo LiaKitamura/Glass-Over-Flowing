@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<div class="container">
   <div class="row">
     <div class="col-sm-offset-3">
       <div class="col-sm-6">
@@ -36,19 +36,4 @@
       </div>
     </div>
   </div>
-</div> -->
-
-<div class="container">
-  <form class="form-signin" role="form">
-    <h2 class="form-signin-heading">Sign In</h2>
-        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-      <input type="email" class="form-control" placeholder="Email address" required autofocus>
-      <input type="password" class="form-control" placeholder="Password" required>
-    <div class="checkbox">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-  </form>
 </div>
