@@ -9,11 +9,36 @@
 //   margin-top: 5%;
 //   height: 450px;
 // }
+.user {
+  margin-top: 12%;
+  color: black;
+}
+
+#user-page p {
+  margin: 0;
+}
 
 #profile_pic {
   border: 1px solid black;
-  margin: 0 auto;
+  margin: auto;
 }
 
+.summary {
+  background-color: #DDD;
+  height: 455px;
+  padding-top: 2%;
+  border-radius: 2%;
+}
+.summary p {
+  margin: 8% 0;
+}
+.user-main {
+  background-color: #DDD;
+  border-radius: 2%;
+}
+
+#myModalLabel {
+  color: black;
+}
 
 // when window is less then about 880px the style name and description disappear and move to the bottom //
