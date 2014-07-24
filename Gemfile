@@ -33,6 +33,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'factory_girl_rails'
   gem 'ffaker'
+  gem 'meta_request'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
