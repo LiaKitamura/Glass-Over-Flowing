@@ -11,15 +11,11 @@
         null,
         1,
         null,
+        null,
+        null,
         1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/admin_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/admin/base_helper.rb": [
-        1,
+        0,
+        null,
         null
       ],
       "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/application_helper.rb": [
@@ -28,39 +24,10 @@
         1,
         0,
         0,
-        null,
         0,
         null,
         null,
         null,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/beers_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/categories_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/favorites_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/online_brews_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/site_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/styles_helper.rb": [
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/users_helper.rb": [
-        1,
         null
       ],
       "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/admin/base_controller.rb": [
@@ -73,7 +40,6 @@
         1,
         1,
         1,
-        null,
         null,
         1,
         null,
@@ -89,7 +55,6 @@
         1,
         null,
         1,
-        null,
         1,
         0,
         null,
@@ -115,6 +80,11 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        null,
         1,
         0,
         null,
@@ -122,7 +92,6 @@
       ],
       "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/categories_controller.rb": [
         1,
-        null,
         1,
         0,
         null,
@@ -131,46 +100,12 @@
       "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/favorites_controller.rb": [
         1,
         1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
         1,
         null,
         1,
         0,
-        null,
-        null,
-        1,
-        0,
-        0,
         0,
         null,
-        0,
         0,
         null,
         null,
@@ -179,27 +114,34 @@
         0,
         0,
         null,
-        0,
         null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/online_brews_controller.rb": [
+      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/search_results_controller.rb": [
         1,
         null,
         1,
         null,
-        null,
-        null,
-        null,
-        1,
+        0,
         null,
         null,
         null
       ],
       "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/site_controller.rb": [
         1,
+        null,
         1,
+        0,
+        0,
         null,
         null,
         1,
@@ -223,77 +165,8 @@
         0,
         null,
         null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/controllers/users_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/models/beer.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/models/category.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/models/favorite.rb": [
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/models/style.rb": [
-        1,
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1405459240
+    "timestamp": 1406223190
   }
 }
