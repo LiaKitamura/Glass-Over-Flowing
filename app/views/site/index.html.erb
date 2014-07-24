@@ -72,18 +72,76 @@
     </div>
   </section>
 
-  <!-- Download Section -->
+  <!-- Featured Section -->
   <section id="featured" class="content-section text-center">
     <div class="download-section">
       <div class="container">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Featured List</h2>
-          <p>Top Beers</p>
-          <a href="#" class="btn btn-default btn-lg">Beers</a>
+          <button class="btn btn-default btn-md" data-toggle="modal" data-target="#myModal">
+            Top Beers
+          </button>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Top Beers</h4>
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse">
+                    Top Beer by ABV
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="row">
+                    <% @beers.each do |beer| %>
+                      <li class="col-sm-6"><%= link_to(beer.name, beer) %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse">
+                    Most Favorited Beer
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <ul class="row">
+                    <% @beers.each do |beer| %>
+                      <li class="col-sm-6"><%= link_to(beer.name, beer) %></li>
+                    <% end %>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Contact Section -->
   <section id="contact" class="container content-section text-center">

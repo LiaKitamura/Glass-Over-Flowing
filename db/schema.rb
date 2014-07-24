@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140719195141) do
+ActiveRecord::Schema.define(version: 20140724023340) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140719195141) do
     t.string   "style"
     t.string   "name"
     t.string   "brewed_by"
-    t.float    "ABV"
+    t.float    "abv"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "style_id"
@@ -44,6 +44,9 @@ ActiveRecord::Schema.define(version: 20140719195141) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "resource_id"
+    t.string   "established"
+    t.string   "longitude"
+    t.string   "latitude"
   end
 
   create_table "categories", force: true do |t|
@@ -53,6 +56,7 @@ ActiveRecord::Schema.define(version: 20140719195141) do
     t.string   "resources_category_id"
     t.text     "category_description"
     t.string   "slug"
+    t.integer  "resource_id"
   end
 
   add_index "categories", ["slug"], name: "index_categories_on_slug", unique: true, using: :btree
