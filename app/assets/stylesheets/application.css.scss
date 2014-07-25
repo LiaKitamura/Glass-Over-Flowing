@@ -8,6 +8,14 @@
 @import 'grayscale';
 
 
+.container {
+  height: 100%;
+}
+
+.container.gof-home {
+  margin-top: 25%;
+}
+
 #j-img,
 #l-img {
   margin: auto;

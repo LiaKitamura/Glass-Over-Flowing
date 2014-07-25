@@ -1,26 +1,28 @@
 <%= render 'layouts/navbar2' %>
 <div class="content-section beer-page">
-  <div class="beer-page">
-    <div class="row">
-      <h1><%= @brew.name %></h1>
-      <h4><%= @brew.style.category_name %></h4>
-      <h4><%= @brew.style.style_name %></h4>
-      <p>ABV: <%= @brew.abv %>%</p>
-      <p>Beer Description: <%= @brew.beer_description %></p>
+  <div class="container">
+    <div class="beer-page">
+      <div class="row">
+        <h1><%= @brew.name %></h1>
+        <h4><%= @brew.style.category_name %></h4>
+        <h4><%= @brew.style.style_name %></h4>
+        <p>ABV: <%= @brew.abv %>%</p>
+        <p>Beer Description: <%= @brew.beer_description %></p>
+      </div>
     </div>
-  </div>
-  <% if current_user %>
-    <% unless current_user.favorites.exists?(id: @brew.id) %>
-      <button type="button" class="btn btn-default btn-sm">
-        <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), class: 'fa fa-beer', method: :post %>
-      </button>
-    <% else %>
-      <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
+    <% if current_user %>
+      <% unless current_user.favorites.exists?(id: @brew.id) %>
+        <button type="button" class="btn btn-default btn-sm">
+          <%= link_to 'Add to favorites', favorites_path(beer_id: @brew), class: 'fa fa-beer', method: :post %>
+        </button>
+      <% else %>
+        <%= link_to 'Remove from favorites', favorites_path(@brew), method: :delete %>
+      <% end %>
     <% end %>
-  <% end %>
     <button type="button" class="btn btn-default btn-sm">
       <%= link_to 'Back to Beers', style_path(@brew.style.id), class: 'fa fa-beer' %>
     </button>
+  </div>
 </div>
 <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->
 <!-- but still shows the message beer favorited message -->
