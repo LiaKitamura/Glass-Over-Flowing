@@ -1,8 +1,7 @@
 class SearchResultsController < ApplicationController
 
   def index
-    # @results = Style.search(params[:q]).collect(&:searchable)
-    @results = Style.search(params[:q])
+    @styles = Style.search(params[:q])
+    @beers = Beer.search(params[:q])
   end
-
 end

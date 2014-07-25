@@ -1,5 +1,17 @@
 <h1 class="page-header">Search Results for <%= params[:q] %></h1>
-<% @results.each do |result| %>
-  <h1><%= link_to(result.style_name, result) %></h1>
-  <p><%= result.style_description %></p>
-<% end %>
+<div class="beer-search-results">
+  <p>Found <%= pluralize(@beers.length, 'beer') %></p>
+  <% @beers.each do |result| %>
+    <div class="result">
+      <h1><%= link_to(result.name, result) %></h1>
+    </div>
+  <% end %>
+  <div class="style-search-results">
+    <p>Found <%= pluralize(@styles.length, 'style') %></p>
+    <% @styles.each do |result| %>
+    <div class="result">
+      <%= link_to(result.name, result) %>
+    </div>
+    <% end %>
+  </div>
+</div>
