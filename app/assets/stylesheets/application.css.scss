@@ -7,9 +7,23 @@
 @import 'users';
 @import 'grayscale';
 
-#about.container {
-  padding-top: 265px;
+
+#j-img,
+#l-img {
+  margin: auto;
 }
+
+
+#featured {
+  padding-top: 240px;
+}
+
+.content-section.beer-rel-pages {
+  margin-top: 12%;
+  padding-top: 0;
+  color: black;
+}
+
 
 // ******* flash notice and alert styling ******* //
 
