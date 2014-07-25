@@ -15,6 +15,9 @@ RSpec.configure do |config|
  config.infer_spec_type_from_file_location!
  config.filter_run focus: true
  config.run_all_when_everything_filtered = true
+ # config.before(:suite) do
+ #   FactoryGirl.lint
+ # end
  config.before :each do
    DatabaseCleaner.start
  end

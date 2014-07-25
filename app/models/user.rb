@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  enum role: [:user, :admin]
+  validates :name, presence: :true
 
-  # validates :name, :role, presence: :true
+  enum role: [:user, :admin]
 
   def favorited_beers
     favorites.collect { |f| f.favorable }

@@ -2,5 +2,6 @@
 
 FactoryGirl.define do
   factory :style do
+    # style_name 'Pale Ale'
   end
 end
