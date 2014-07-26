@@ -37,7 +37,7 @@ RSpec.describe UsersController, :type => :controller do
     end
   end
 
-  describe '#destroy', :focus do
+  describe '#destroy' do
     before do
       @user = create(:user, name: 'not updated', email: "test@test.com", password: "password1")
       sign_in @user
