@@ -1,8 +1,7 @@
 class SearchResultsController < ApplicationController
 
   def index
-    # @results = Style.search(params[:q]).collect(&:searchable)
-    @results = Style.search(params[:q])
+    @beers = PgSearch.multisearch(params[:q]).collect(&:searchable)
+    @styles = PgSearch.multisearch(params[:q]).collect(&:searchable)
   end
-
 end
