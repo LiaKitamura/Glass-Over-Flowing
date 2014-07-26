@@ -8,8 +8,4 @@ RSpec.describe Beer, :type => :model do
     it { should have_many :favorites }
   end
 
-  describe "validations", :focus do
-    it { should validate_presence_of :name }
-  end
-
 end

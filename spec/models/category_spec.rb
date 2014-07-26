@@ -6,4 +6,5 @@ RSpec.describe Category, :type => :model do
     it { should have_many :styles }
   end
 
+
 end
