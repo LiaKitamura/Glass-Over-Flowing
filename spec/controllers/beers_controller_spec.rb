@@ -2,25 +2,20 @@ require 'rails_helper'
 
 RSpec.describe BeersController, :type => :controller do
 
-  # describe "GET 'index'" do
-  #   it "returns http success" do
-  #     get 'index'
-  #     expect(response).to be_success
-  #   end
-  # end
-  #
-  # describe "GET 'show'" do
-  #   it "returns http success" do
-  #     get 'show'
-  #     expect(response).to be_success
-  #   end
-  # end
-  #
-  # describe "GET 'new'" do
-  #   it "returns http success" do
-  #     get 'new'
-  #     expect(response).to be_success
-  #   end
-  # end
+    # describe '#show' do
+    #   before do
+    #     @beer = create(:category, 'dope', :style, 'holy')
+    #     sign_in @user
+    #   end
+    #   it 'displays a single user' do
+    #     get :show, id: @beer.id
+    #     expect(response).to be_success
+    #     expect(assigns(:beer).name).to eq 'Shit Head'
+    #     expect(response).to render_template('show')
+    #   end
+    # end
+
+
+
 
 end
