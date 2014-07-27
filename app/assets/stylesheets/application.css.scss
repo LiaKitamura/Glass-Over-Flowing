@@ -12,8 +12,8 @@
   height: 100%;
 }
 
-.container.gof-home {
-  margin-top: 25%;
+div.container.gof-home {
+  margin-top: 22%;
 }
 
 #j-img,
@@ -23,7 +23,17 @@
 
 
 #featured {
-  padding-top: 240px;
+  padding-top: 15%;
+}
+
+#featured div h2,
+#featured div h2 button
+ {
+  color: darkred;
+}
+
+.nav_contain nav div.container {
+  background-color: black;
 }
 
 .content-section.beer-rel-pages {
@@ -31,6 +41,11 @@
   padding-top: 0;
   color: black;
 }
+
+.beer-page h1 {
+  color: goldenrod;
+}
+
 
 
 // ******* flash notice and alert styling ******* //

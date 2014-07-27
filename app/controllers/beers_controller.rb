@@ -8,11 +8,6 @@ class BeersController < ApplicationController
     @brew = Beer.friendly.find(params[:id])
   end
 
-  def abv
-    # find @brews abv where its not nil
-    
-  end
-
   private
 
   def brew_params
