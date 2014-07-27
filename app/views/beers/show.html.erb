@@ -8,8 +8,8 @@
           <!-- <%#= Brewery.first.beers.first.name %> -->
           <h4><%= @brew.style.category_name %></h4>
           <h4><%= @brew.style.style_name %></h4>
-          <p>ABV: <%= @brew.abv %>%</p>
-          <p>Beer Description: <%= @brew.beer_description %></p>
+          <p>ABV: <%= @brew.abv == nil ? "n/a" : "#{@brew.abv}%" %></p>
+          <p>Beer Description: <%= @brew.beer_description == nil ? "n/a" : @brew.beer_description %></p>
           <% if current_user %>
             <% unless current_user.favorites.exists?(id: @brew.id) %>
               <button type="button" class="btn btn-default btn-sm">

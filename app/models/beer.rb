@@ -6,7 +6,7 @@ class Beer < ActiveRecord::Base
   validates :name, presence: true
 
   include PgSearch
-  multisearchable against: [:name, :abv, ]
+  multisearchable against: [:name, :abv]
 
   extend FriendlyId
   friendly_id :slug_candidates, use: :slugged

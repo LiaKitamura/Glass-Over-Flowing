@@ -6,6 +6,5 @@ class Style < ActiveRecord::Base
   multisearchable against: [:style_name]
 
   extend FriendlyId
-
   friendly_id :style_name, :use => :slugged
 end
