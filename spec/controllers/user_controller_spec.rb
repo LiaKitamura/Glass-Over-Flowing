@@ -23,7 +23,7 @@ RSpec.describe UsersController, :type => :controller do
     context 'when the update was successful' do
       it 'updates user successful' do
         put :update, id: @user.id, user: {name: "updated", email: "test@test.com", password: "password1"}
-        expect(@user.reload.name).to eq "not updated"
+        expect(@user.reload.name).to eq "updated"
         expect(response).to be_redirect
         expect(response).to redirect_to user_path
       end
