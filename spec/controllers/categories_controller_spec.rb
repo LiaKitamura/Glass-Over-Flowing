@@ -8,9 +8,8 @@ RSpec.describe CategoriesController, :type => :controller do
     it 'displays a collection of categories' do
       get :index
       expect(response).to be_success
-      expect(assigns(@category).name).to eq "cheeze"
+      expect(@categories.name).to eq "cheeze"
       expect(response).to render_template('index')
     end
-
   end
 end
