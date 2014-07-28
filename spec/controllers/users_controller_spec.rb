@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe UsersController, :type => :controller do
 
-  describe '#show', :focus do
+  describe '#show' do
     before do
       @user = create(:user, name: 'Shit Head', email: 'test@test.com', password: 'Password1')
       sign_in @user
