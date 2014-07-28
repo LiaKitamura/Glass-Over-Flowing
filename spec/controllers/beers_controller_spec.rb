@@ -5,7 +5,7 @@ RSpec.describe BeersController, :type => :controller do
     before do
       # @category = create(:category, name: "South German-Style Hefeweizen / Hefeweissbier")
       # @style = create(:style, style_name: "A Slice of Hefen")
-      @brew = Beer.create(:beer, name: "In Heat Wheat")
+      @brew = create(:beer, name: "In Heat Wheat")
     end
     it 'displays beer on show page' do
       get :show, id: @brew.id
