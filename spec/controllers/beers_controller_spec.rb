@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe BeersController, :type => :controller do
-  describe '#show', :focus do
+  describe '#show' do
     before do
       @category = create(:category, name: "South German-Style Hefeweizen / Hefeweissbier")
       @style = create(:style, style_name: "A Slice of Hefen")
