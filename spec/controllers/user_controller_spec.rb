@@ -7,7 +7,7 @@ RSpec.describe UsersController, :type => :controller do
       @user = create(:user, name: 'Shit Head', email: 'test@test.com', password: 'Password1')
       sign_in @user
     end
-    it 'displays a single user' do
+    it 'displays a user' do
       get :show, id: @user.id
       expect(response).to be_success
       expect(assigns(:user).name).to eq 'Shit Head'
