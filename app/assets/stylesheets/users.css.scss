@@ -5,27 +5,31 @@
   margin-left: 0;
 }
 
-#user-page p {
-  margin: 0;
-}
-
 #profile_pic {
   border: 1px solid black;
   margin: auto;
 }
 
-.summary {
-  background-color: #DDD;
-  height: 455px;
+#main-content {
+  background-color: transparent;
+}
+
+.user-main {
+  float: right;
+}
+
+.summary,
+.user-main {
+  height: 100%;
   padding-top: 2%;
-  border-radius: 2%;
+  background-color: white;
+}
+
+.summary {
+  width: 20%;
 }
 .summary p {
   margin: 8% 0;
-}
-.user-main {
-  background-color: #DDD;
-  border-radius: 2%;
 }
 
 #myModalLabel {

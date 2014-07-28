@@ -148,9 +148,9 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
-.intro-body div.container {
-  margin-top: 10%;
-}
+// .intro-body div.container {
+//   margin-top: 10%;
+// }
 .intro .intro-body .brand-heading {
   font-size: 40px;
 }
@@ -286,19 +286,21 @@ a:focus {
   transition: all .3s ease-in-out;
 }
 
-.btn-default {
-  border: 1px solid #219ab3;
-  color: #219ab3;
-  background-color: transparent;
+.btn-default,
+ {
+  color: black;
+  border: 1px solid black;
+  background-color: goldenrod;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #219ab3;
+  // border: 1px solid goldenrod;
   outline: 0;
-  color: #000;
-  background-color: #219ab3;
+  color: goldenrod;
+  background-color: black;
 }
+
 
 ul.banner-social-buttons {
   margin-top: 0;
@@ -323,6 +325,7 @@ ul.banner-social-buttons {
 }
 
 footer {
+  border-top: 1px solid white;
   padding: 50px 0;
 }
 

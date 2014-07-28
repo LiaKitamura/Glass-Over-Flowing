@@ -2,29 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#individual_style {
-  background: white;
-  max-height: 400px;
-  width: 80%;
-  float: right;
-  border-radius: 1%;
-  min-height: 400px;
-  padding-top: 1%;
-}
-
-#style {
-  background-color: transparent;
-}
-
 #beer_list {
   background: white;
   border-radius: 1.5%;
   // border-right: 1px solid #dadfe5;
   min-width: 18%;
   max-width: 18%;
-  max-height: 400px;
+  // max-height: 400px;
   overflow: auto;
   // margin-top: 3%;
+  height: 100%;
 
   ul.catergory-list{
     padding: 0;
@@ -61,4 +48,20 @@
       }
     }
   }
+}
+
+#individual_style {
+  background: white;
+  // max-height: 400px;
+  width: 80%;
+  float: right;
+  border-radius: 1%;
+  height: 100%;
+  // min-height: 400px;
+  padding-top: 1%;
+}
+
+#style {
+  background-color: transparent;
+  // height: 100%;
 }

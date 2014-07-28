@@ -8,12 +8,10 @@
 @import 'grayscale';
 
 
-.container {
-  height: 100%;
-}
-
-div.container.gof-home {
-  margin-top: 22%;
+div.container.main-box {
+  height: 90%;
+  margin-top: 2%;
+  width: 90%;
 }
 
 #j-img,
@@ -23,7 +21,7 @@ div.container.gof-home {
 
 
 #featured {
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 #featured div h2,
@@ -32,15 +30,33 @@ div.container.gof-home {
   color: darkred;
 }
 
+#contact {
+  padding-top:15%;
+}
+
 .nav_contain nav div.container {
   background-color: black;
+}
+
+.fa-beer,
+.fa-arrow-left {
+  color: black;
+}
+
+.fa-beer:hover,
+.fa-arrow-left:hover {
+  color: goldenrod;
 }
 
 .beer-page h1 {
   color: goldenrod;
 }
 
-
+.beer-page div.row {
+  background-color: white;
+  border-radius: .5%;
+  height: 100%;
+}
 
 // ******* flash notice and alert styling ******* //
 
