@@ -1,17 +1,32 @@
-<h1 class="page-header">Search Results for <%= params[:q] %></h1>
-<div class="beer-search-results">
-  <p>Found <%= pluralize(@beers.length, 'beer') %></p>
-  <% @beers.each do |result| %>
-    <div class="result">
-      <h1><%= link_to(result.name, result) %></h1>
+<div class="nav_contain">
+  <%= render 'layouts/navbar2' %>
+  <div class="content-section">
+    <div class="container main-box">
+      <div class="beer-page">
+        <div class="row">
+        <h1 class="page-header search">Search Results for <%= params[:q] %></h1>
+          <div class="beer-search-results">
+            <div class="col-sm-6">
+              <h3>Found <%= pluralize(@beers.length, 'beer') %></h3>
+              <% @beers.each do |result| %>
+                <div class="result">
+                  <p><%= link_to(result.name, result) %> | <%= result.abv == nil ? "n/a" : "#{result.abv}%" %></p>
+                </div>
+              <% end %>
+              </div>
+            </div>
+            <div class="style-search-results">
+              <div class="col-sm-6">
+                <h3>Found <%= pluralize(@styles.length, 'style') %></h3>
+                <% @styles.each do |result| %>
+                <div class="result">
+                  <p><%= link_to(result.style_name, result) %></p>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <% end %>
-  <div class="style-search-results">
-    <p>Found <%= pluralize(@styles.length, 'style') %></p>
-    <% @styles.each do |result| %>
-    <div class="result">
-      <%= link_to(result.name, result) %>
-    </div>
-    <% end %>
   </div>
 </div>
