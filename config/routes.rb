@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :categories, only: [:index, :show]
   resources :styles, only: [:index, :show]
   resources :beers, only: [:index, :show]
+  resources :breweries, only: [:index, :show]
   resources :favorites, only: [:create, :destroy]
 
   get '/search' => 'search_results#index'

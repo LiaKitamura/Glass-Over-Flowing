@@ -3,6 +3,11 @@ class Beer < ActiveRecord::Base
   belongs_to :brewery
   has_many :favorites, as: :favorable
 
+  validates :name, presence: true
+
+  include PgSearch
+  multisearchable against: [:name, :abv]
+
   extend FriendlyId
   friendly_id :slug_candidates, use: :slugged
 
@@ -13,9 +18,6 @@ class Beer < ActiveRecord::Base
       [:name, :resource_id, :brewery_id]
     ]
   end
-
-  # friendly_id :name, :use => :scoped, :scope => :style
-
-  validates :name, presence: true
-
 end
+# update db in terminal to have friendlyId with Beer.find_each(&save)
+# then returned friendly_id to have name and use style scope so it would work in the browser

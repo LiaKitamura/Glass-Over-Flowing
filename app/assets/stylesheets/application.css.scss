@@ -5,10 +5,64 @@
 @import 'styles';
 @import 'beer';
 @import 'users';
+@import 'devise_styles';
 @import 'grayscale';
 
-#about.container {
-  padding-top: 265px;
+
+div.container.main-box {
+  height: 90%;
+  margin-top: 2%;
+  width: 90%;
+}
+
+#about div.row,
+.fa-stack {
+  padding-top: 6%;
+}
+
+#j-img,
+#l-img {
+  margin: auto;
+}
+
+#featured {
+  padding-top: 20%;
+}
+
+#featured div h2,
+#featured div h2 button
+ {
+  color: darkred;
+}
+
+#contact {
+  padding-top:15%;
+}
+
+.nav_contain nav div.container {
+  background-color: black;
+}
+
+.fa-beer,
+.fa-arrow-left,
+.sign-in a {
+  color: black;
+}
+
+.fa-beer:hover,
+.fa-arrow-left:hover,
+.sign-in a:hover {
+  color: goldenrod;
+}
+
+.beer-page h1 {
+  color: goldenrod;
+}
+
+.beer-page div.row {
+  background-color: white;
+  border-radius: .5%;
+  height: 100%;
 }
 
 // ******* flash notice and alert styling ******* //

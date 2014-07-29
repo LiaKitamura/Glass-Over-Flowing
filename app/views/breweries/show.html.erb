@@ -1,0 +1,15 @@
+<%= render 'layouts/navbar2' %>
+<div class="content-section beer-page">
+  <div class="container">
+    <div class="brewery-page">
+      <div class="row">
+        <img src="<%= @brewery.large_image %>" alt="" />
+        <h1><%= @brewery.brewery_name %></h1>
+        <h5><%= @brewwery.established %></h5>
+        <h5><%= @brewery.website %></h5>
+        <h4><%= link_to(@brew.brewery.brewery_name) %></h4>
+        <p><%= @brewery.brewery_description %></p>
+      </div>
+    </div>
+  </div>
+</div>
