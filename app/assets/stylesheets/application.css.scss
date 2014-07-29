@@ -5,6 +5,7 @@
 @import 'styles';
 @import 'beer';
 @import 'users';
+@import 'devise_styles';
 @import 'grayscale';
 
 
@@ -39,12 +40,14 @@ div.container.main-box {
 }
 
 .fa-beer,
-.fa-arrow-left {
+.fa-arrow-left,
+.sign-in a {
   color: black;
 }
 
 .fa-beer:hover,
-.fa-arrow-left:hover {
+.fa-arrow-left:hover,
+.sign-in a:hover {
   color: goldenrod;
 }
 
