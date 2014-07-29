@@ -2,6 +2,10 @@ class FavoritesController < ApplicationController
   before_action :authenticate_user!
   before_action :set_beer
 
+  def index
+    @favorites = Favorite.all
+  end
+
   def create
     if Favorite.find_or_create_by(favorable: @brew, user: current_user)
       redirect_to @brew, notice: 'Beer has been favorited'
@@ -16,10 +20,6 @@ class FavoritesController < ApplicationController
   end
 
   private
-
-  # def favorite_params
-  #   params.require(:favorite).permit!
-  # end
 
   def set_beer
     @brew = Beer.friendly.find(params[:beer_id] || params[:id])
