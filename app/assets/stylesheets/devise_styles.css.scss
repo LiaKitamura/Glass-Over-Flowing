@@ -1,10 +1,15 @@
-.siginup-in-default {
+.signinup-default {
   width: 35%;
   margin: auto;
+  text-align: center;
+}
+
+.signinup-default h1 {
+  margin: 1% auto;
 }
 
 .container.sign-page {
-  padding-top: 7%;
+  padding-top: 3%;
 }
 
 .sign-up {
@@ -13,4 +18,20 @@
 
 .sign-in {
   float: right;
+}
+
+.container.edit {
+  color: black;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.edit h2,
+.edit h3,
+.edit p {
+  margin: 1%;
+}
+
+.edit .panel {
+  margin-bottom: 0;
 }
