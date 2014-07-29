@@ -2,7 +2,8 @@ class SiteController < ApplicationController
 
   def index
     @beers = Beer.where.not(abv: nil).order('abv DESC').limit(5)
-    @most_fav = Favorite.where.not(favorable_id: nil).order('').limit(5)
+    @favorites = Favorite.where(:favorable_type => "Beer").group_by { |f| f.favorable_id }
+    @sorted_favorites = @favorites.sort_by { |beer, fav| fav.count }.reverse
   end
 
   def show
