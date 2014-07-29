@@ -1,13 +1,13 @@
 require 'rails_helper'
 
-RSpec.describe UserController, :type => :controller do
+RSpec.describe UsersController, :type => :controller do
 
   describe '#show' do
     before do
       @user = create(:user, name: 'Shit Head', email: 'test@test.com', password: 'Password1')
       sign_in @user
     end
-    it 'displays a single user' do
+    it 'displays a user' do
       get :show, id: @user.id
       expect(response).to be_success
       expect(assigns(:user).name).to eq 'Shit Head'
@@ -23,7 +23,7 @@ RSpec.describe UserController, :type => :controller do
     context 'when the update was successful' do
       it 'updates user successful' do
         put :update, id: @user.id, user: {name: "updated", email: "test@test.com", password: "password1"}
-        expect(@user.reload.name).to eq "not updated"
+        expect(@user.reload.name).to eq "updated"
         expect(response).to be_redirect
         expect(response).to redirect_to user_path
       end
@@ -37,7 +37,7 @@ RSpec.describe UserController, :type => :controller do
     end
   end
 
-  describe '#destroy', :focus do
+  describe '#destroy' do
     before do
       @user = create(:user, name: 'not updated', email: "test@test.com", password: "password1")
       sign_in @user

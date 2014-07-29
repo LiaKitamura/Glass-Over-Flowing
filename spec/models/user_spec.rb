@@ -8,15 +8,28 @@ RSpec.describe User, :type => :model do
 
   describe "validations" do
     it { should validate_presence_of :name }
+    it { should validate_presence_of :email }
   end
 
-  # describe "#favorited_beers" do
+  describe '#name' do
+    before do
+      @user = create(:user, name: "Justin", email: "test@test.com", password: "password1")
+    end
+    it 'takes user and returns Justin' do
+      expect(@user.name).to eq "Justin"
+      expect(@user.email).to eq "test@test.com"
+      expect(@user.password).to eq "password1"
+    end
+  end
+
+  # describe '#email' do
   #   before do
-  #     @favorite = User.favorited_beers(user_id: 1)
+  #     @user = create(:user, email: 'test@test.com')
   #   end
-  #   it "takes users id and adds to favorites user_id, and stores it" do
-  #     expect(favorited_beers.user_id).to eql 1
+  #   it 'returns email test@test.com' do
+  #     expect(@user.email).to eq 'test@test.com'
   #   end
   # end
+
 
 end
