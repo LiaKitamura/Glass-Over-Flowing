@@ -11,4 +11,11 @@
 
 .search {
   border-bottom: 1px solid black;
+// would like to make search h1, beer h3, and style h3 to be fixed so when scrolling it is always showing.
+  // position: fixed;
+  // text-align: center;
+}
+
+.beer-page.search-flow div.row {
+  overflow: auto;
 }
