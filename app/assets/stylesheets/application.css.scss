@@ -116,7 +116,7 @@ div.container-fluid.main-box {
     display: none;
   }
 
-  #about.container {
+  #about.container-fluid {
     padding-top: 21%;
 
     div.col-sm-6 {
@@ -229,6 +229,56 @@ div.container-fluid.main-box {
   }
 }
 
-@media screen and (max-width : 766px) {
+@media screen and (max-width: 1000px) {
 
+  div.container-fluid {
+    height: 95%;
+    overflow: auto;
+
+    .content-section {
+      height: 100%;
+      margin: auto 0;
+
+      .category {
+        overflow: auto;
+        padding-top: 8%;
+
+        .container {
+          width: 970px;
+          height: 95%;
+        }
+      }
+    }
+  }
+
+  #featured.content-section {
+    border-bottom: 1px solid white;
+  }
+
+  #about.content-section {
+    height: initial;
+    padding-top: 15%;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+
+  div.container-fluid {
+    max-height: 100%;
+
+    .category {
+      overflow: auto;
+      height: 500px;
+    }
+
+    .container-fluid.main-box {
+      margin-top: 0;
+      width: initial;
+
+      #individual_style {
+        max-height: 560px;
+        min-height: 560px;
+      }
+    }
+  }
 }
