@@ -1,3 +1,5 @@
+<div class="container-fluid">
+
 <div class="nav_contain">
   <%= render 'layouts/navbar2' %>
   <div class="content-section">
@@ -7,8 +9,8 @@
           <div class="col-sm-12 main-beer">
             <h1><%= @brew.name %></h1>
             <!-- <%#= Brewery.first.beers.first.name %> -->
-            <h4><%= @brew.style.category_name %></h4>
-            <h4><%= @brew.style.style_name %></h4>
+            <h4 class='h4-style'><%= @brew.style.category_name %></h4>
+            <h4 class='h4-style'><%= @brew.style.style_name %></h4>
             <p>ABV: <%= @brew.abv == nil ? "n/a" : "#{@brew.abv}%" %></p>
             <p>Beer Description: <%= @brew.beer_description == nil ? "n/a" : @brew.beer_description %></p>
             <div class="row">
@@ -31,5 +33,7 @@
     </div>
   </div>
 </div>
+</div>
+
 <!-- when user favorites a beer that has already been favorited it doesn't duplicate beer  -->
 <!-- but still shows the message beer favorited message -->

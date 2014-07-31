@@ -1,11 +1,28 @@
-<div class="nav_contain">
-  <%= render 'layouts/navbar2' %>
-  <div class="content-section">
-    <div class="container main-box">
-      <div class="beer-page">
-        <div class="row" id="style">
-          <div id="beer_list" class="col-sm-3">
-            <ul class="catergory-list">
+<div class="container-fluid">
+  <div class="nav_contain">
+    <%= render 'layouts/navbar2' %>
+    <div class="content-section">
+      <div class="container-fluid main-box">
+        <div class="beer-page">
+          <div class="row" id="style">
+            <div id="beer_list" class="col-sm-3">
+              <ul class="catergory-list hidden-sm hidden-xs">
+                <% @style.beers.each do |beer| %>
+                  <li class="section">
+                    <%= link_to(beer.name, beer) %>
+                  </li>
+                <% end %>
+              </ul>
+            </div>
+            <div id='individual_style' class="col-sm-9 hidden-sm hidden-xs">
+              <h1><%= @style.style_name %></h1>
+              <p><%= @style.style_description %></p>
+            </div>
+            <div id='individual_style' class="col-sm-9 visible-sm visible-xs">
+              <h1><%= @style.style_name %></h1>
+              <p><%= @style.style_description %></p>
+            </div>
+            <ul class="catergory-list visible-sm visible-xs">
               <% @style.beers.each do |beer| %>
                 <li class="section">
                   <%= link_to(beer.name, beer) %>
@@ -13,9 +30,6 @@
               <% end %>
             </ul>
           </div>
-          <div id='individual_style' class="col-sm-9">
-            <h1><%= @style.style_name %></h1>
-            <p><%= @style.style_description %></p>
           </div>
         </div>
       </div>
