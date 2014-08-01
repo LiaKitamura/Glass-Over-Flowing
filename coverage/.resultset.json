@@ -29,6 +29,10 @@
         null,
         null
       ],
+      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/helpers/breweries_helper.rb": [
+        1,
+        null
+      ],
       "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/admin/base_controller.rb": [
         1,
         1,
@@ -73,6 +77,23 @@
         1,
         null,
         null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/breweries_controller.rb": [
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/categories_controller.rb": [
@@ -89,6 +110,10 @@
         null,
         1,
         0,
+        null,
+        null,
+        1,
+        0,
         0,
         null,
         0,
@@ -101,10 +126,6 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
         null,
         1,
         0,
@@ -115,7 +136,9 @@
         1,
         null,
         1,
+        null,
         0,
+        null,
         0,
         null,
         null
@@ -123,6 +146,7 @@
       "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/site_controller.rb": [
         1,
         null,
+        1,
         1,
         1,
         1,
@@ -191,6 +215,11 @@
         1,
         null,
         1,
+        null,
+        1,
+        1,
+        null,
+        1,
         1,
         null,
         1,
@@ -201,9 +230,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        1,
         null,
         null
       ],
@@ -227,17 +253,15 @@
         1,
         1,
         1,
+        null,
+        1,
         1,
         null,
         1,
-        null,
         1,
-        null,
-        1,
-        null,
         null
       ]
     },
-    "timestamp": 1406654065
+    "timestamp": 1406917227
   }
 }
