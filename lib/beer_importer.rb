@@ -41,7 +41,7 @@ class BeerImporter
             beer_stuff.abv = beer.abv
             beer_stuff.icon = beer.try(:labels).try(:icon)
             beer_stuff.large_image = beer.try(:labels).try(:large)
-            beer_stuff.brewery_id = beer_place.id
+            beer_stuff.brewery_id = beer_place.resource_id
           end
         end
       end

@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/user.rb": [
+      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/models/user.rb": [
         1,
         1,
         null,
@@ -17,7 +17,7 @@
         null,
         null
       ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/helpers/application_helper.rb": [
+      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/application_helper.rb": [
         1,
         null,
         1,
@@ -29,215 +29,11 @@
         null,
         null
       ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/admin/base_controller.rb": [
+      "/Users/ZaFox/Desktop/capstone/Glass_Over_Flowing/app/helpers/breweries_helper.rb": [
         1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/admin_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/beers_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/categories_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/favorites_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/search_results_controller.rb": [
-        1,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/site_controller.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/styles_controller.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/controllers/users_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        2,
-        2,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/beer.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        2,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/brewery.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/category.rb": [
-        1,
-        1,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/favorite.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Cheeze/Desktop/Capstone/Glass-Over-Flowing/app/models/style.rb": [
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
         null
       ]
     },
-    "timestamp": 1406654065
+    "timestamp": 1412776162
   }
 }
