@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
 
 gem 'rails', '4.1.1'
 
@@ -31,12 +30,14 @@ end
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'bundler-updater'
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'meta_request'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
+  gem 'traceroute'
   gem 'xray-rails'
 end
 
