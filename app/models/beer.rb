@@ -3,7 +3,7 @@ class Beer < ActiveRecord::Base
   belongs_to :brewery
   has_many :favorites, as: :favorable
 
-  validates :name, :user_id, presence: true
+  # validates :name, :user_id, presence: true
 
   include PgSearch
   multisearchable against: [:name, :abv]
