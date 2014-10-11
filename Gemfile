@@ -34,6 +34,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'ffaker'
   gem 'meta_request'
+  gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'spring-commands-rspec'
