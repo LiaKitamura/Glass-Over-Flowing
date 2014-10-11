@@ -23,9 +23,9 @@ namespace :seed do
   end
 
   desc 'Beers'
-  task beers_data: :environment do
+  task beer_data: :environment do
     require Rails.root.join('lib', 'beer_importer')
     puts "I'm importing beers"
-    BeerImporter.beers_data
+    BeerImporter.beer_data
   end
 end
