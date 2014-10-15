@@ -7,8 +7,7 @@
           <div class="row">
             <div class="col-sm-12 main-beer beer">
               <h1><%= @brew.name %></h1>
-              <!-- <h3><%# @brew.brewery.brewery_name %></h3> -->
-              <!-- <%#= Brewery.first.beers.first.name %> -->
+              <h3><%= link_to @brew.brewery.brewery_name, brewery_path(@brew.brewery.id) %></h3>
               <h4 class='h4-style'><%= @brew.style.category_name %></h4>
               <h4 class='h4-style'><%= @brew.style.style_name %></h4>
               <p>ABV: <%= @brew.abv == nil ? "n/a" : "#{@brew.abv}%" %></p>

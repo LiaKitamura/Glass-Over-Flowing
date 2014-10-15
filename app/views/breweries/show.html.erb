@@ -3,11 +3,20 @@
   <div class="container">
     <div class="brewery-page">
       <div class="row">
-        <img src="<%= @brewery.large_image %>" alt="" />
+        <%= image_tag(@brewery.large_image) %>
         <h1><%= @brewery.brewery_name %></h1>
-        <h5><%= @brewwery.established %></h5>
-        <h5><%= @brewery.website %></h5>
-        <h4><%= link_to(@brew.brewery.brewery_name) %></h4>
+        <p>Established: <%= @brewery.established %></p>
+        <p>Phone: <%= @brewery.phone %></p>
+        <p><%= @brewery.hours %></p>
+        <p>Website: <%= @brewery.website %></p>
+        <address>
+          <%= @brewery.location_name %><br>
+          <%= @brewery.street_address %><br>
+          <%= @brewery.locality %>
+          <%= @brewery.region %>,
+          <%= @brewery.postal_code %><br>
+        </address>
+        <p>Open to public: <%= @brewery.open_to_public %></p>
         <p><%= @brewery.brewery_description %></p>
       </div>
     </div>
