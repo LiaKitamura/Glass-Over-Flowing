@@ -5,10 +5,10 @@
       <div class="row">
         <%= image_tag(@brewery.large_image) %>
         <h1><%= @brewery.brewery_name %></h1>
-        <p>Established: <%= @brewery.established %></p>
-        <p>Phone: <%= @brewery.phone %></p>
-        <p><%= @brewery.hours %></p>
-        <p>Website: <%= @brewery.website %></p>
+        <p><b>Established: </b><%= @brewery.established %></p>
+        <p><b>Phone: </b><%= @brewery.phone %></p>
+        <p><b>Website: </b><%= link_to('www.therunofthemill.net', @brewery.website, target:'_blank') %></p>
+        <p><b>Location Type: </b><%= @brewery.location_type %></p>
         <address>
           <%= @brewery.location_name %><br>
           <%= @brewery.street_address %><br>
@@ -16,7 +16,8 @@
           <%= @brewery.region %>,
           <%= @brewery.postal_code %><br>
         </address>
-        <p>Open to public: <%= @brewery.open_to_public %></p>
+        <p><b>Open to public:</b> <%= @brewery.open_to_public %></p>
+        <p><%= @brewery.hours %></p>
         <p><%= @brewery.brewery_description %></p>
       </div>
     </div>
